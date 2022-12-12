@@ -16,7 +16,7 @@ export interface NavItem {
   label: string
   subLabel?: string
   children?: Array<NavItem>
-  href?: string
+  href: string
 }
 
 export interface Layout {

@@ -60,20 +60,19 @@ export default function NextTemplateSignup() {
       const lastName = fullName[fullName.length - 1]
       const myInvitationId = `${firstName.toLowerCase()}-${idInvitation()}`
       const newUser: User = {
-        email: response?.user?.email,
+        email: data.email,
         hasSentEmail: false,
-        avatarUrl: '',
-        name: response?.user?.displayName,
+        photoURL: '',
+        displayName: response?.user?.displayName,
         wantReceiveEmail: data.wantReceiveEmail,
         uid: response?.user?.uid,
         phoneNumber: data.phoneNumber,
         invitation: idWhoInvited,
         myInvitationId,
-        firstName,
-        lastName,
-        participatingAt: [],
-        ownPools: [],
-        guess: []
+        metadata: undefined,
+        emailVerified: false,
+        friends: [],
+        guests: []
       }
       await api.post('/users', newUser, {
         headers: {

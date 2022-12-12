@@ -1,4 +1,4 @@
-import NextLayout from '../../components/templates/NextLayout'
+import { NextLayout } from '../../components/templates/NextLayout'
 import { useGetPostsQuery } from '../../graphql/generated'
 import { useRouter } from 'next/router'
 import { Container, Heading, Text } from '@chakra-ui/react'

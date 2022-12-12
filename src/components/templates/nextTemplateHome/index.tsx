@@ -1,23 +1,16 @@
 import React from 'react'
-import { NextFeatureProps } from '../../molecules/nextFeature'
-import NextCallToAction, { NextCallToActionProps } from '../../organisms/nextCallToAction'
-import NextFeatures from '../../organisms/nextFeatures'
-import NextHero, { NextHeroProps } from '../../organisms/nextHero'
-import NextLayout from '../nextLayout'
+import { NextCallToAction, NextCallToActionProps } from '../../organisms/NextCallToAction'
+import NextHero, { NextHeroProps } from '../../organisms/NextHero'
+import { NextLayout } from '../NextLayout'
 
 export type NextTemplateHomeProps = {
   nextHeroItem: NextHeroProps
-  nextFeatureItems: Array<NextFeatureProps>
   nextCallToActionItems: Array<NextCallToActionProps>
   nextTechnologyItems: Array<Record<string, unknown>>
   nextTeamItems: Array<Record<string, string>>
 }
 
-const NextTemplateHome = ({
-  nextHeroItem,
-  nextCallToActionItems,
-  nextTechnologyItems
-}: NextTemplateHomeProps) => {
+const NextTemplateHome = ({ nextHeroItem, nextCallToActionItems }: NextTemplateHomeProps) => {
   return (
     <NextLayout>
       <NextHero
@@ -42,7 +35,6 @@ const NextTemplateHome = ({
           url={item.url}
         />
       ))}
-      <NextFeatures items={nextTechnologyItems} numberGrid={6} />
     </NextLayout>
   )
 }

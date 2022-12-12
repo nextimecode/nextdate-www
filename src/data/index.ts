@@ -1,9 +1,42 @@
-import { NextCallToActionProps, NextFeatureProps } from '../types/LandingPageItems'
+import { NextCallToActionProps } from '../types/LandingPageItems'
 
 export const nextSocialNetwork = (numberPhone = '553189217467') => {
   return {
     url: `https://api.whatsapp.com/send?phone=${numberPhone}&text=Ol%C3%A1,%20NeXTIME!%0AGostaria%20de%20solicitar%20um%20orçamento.`
   }
+}
+
+export const layout = {
+  title: 'NeXTSHOW | Dashboard',
+  url: 'https://www.nextshow.com.br/',
+  description:
+    'O NeXTShow é um game produzido pela empresa NeXTIME no qual você deixa palpites sobre os participantes dos realities shows. Você pode acompanhar seu reality favorito de maneira divertida competindo com os seus amigos e outros.',
+  keywords: [
+    'deolanebezerra',
+    'deolane',
+    'afazenda',
+    'bbb22',
+    'bbb',
+    'tretaafazenda',
+    'afazenda14',
+    'powercouplebrasil',
+    'recordtv',
+    'provadefogo',
+    'reality show',
+    'reality',
+    'deborah albuquerque',
+    'ilha record'
+  ],
+  siteName: 'NeXTShow',
+  socialTitle:
+    'Venha jogar esse game no qual você pode palpitar nos participantes dos realities shows',
+  socialImageUrl: 'https://www.nextshow.com.br/images/image_page.jpg',
+  socialNetwork:
+    'https://api.whatsapp.com/send?phone=5511972436305&text=Ol%C3%A1,%20Pedro!%0ATenho%20dúvidas%20sobre%20o%20NeXTShow.',
+  logoSrc: '/images/logos/next.svg',
+  logoHeight: 62,
+  logoSubtitle: 'Show',
+  logoSubtitleColor: 'next-primary'
 }
 
 export const nextHeroItem = {
@@ -80,7 +113,7 @@ export const nextFeatureItems = [
     text: 'Usamos o que há de melhor no mercado, entregando soluções modernas. Adicionamos tecnologias de inteligência Artificial e estratégias analíticas para o seu negócio.',
     icon: ''
   }
-] as unknown as Array<NextFeatureProps>
+]
 
 export const nextTechnologyItems = [
   {

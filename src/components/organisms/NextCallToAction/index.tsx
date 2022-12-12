@@ -2,7 +2,20 @@ import React from 'react'
 import { Box, Button, Container, Flex, Stack, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { NextCallToActionProps } from './NextCallToActionProps.d'
+
+export interface NextCallToActionProps {
+  id?: string
+  title: string
+  text: string
+  color?: string
+  textButton?: string
+  image: string
+  url: string
+  width: number
+  height: number
+  directionMd?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
+  directionBase?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
+}
 
 export const NextCallToAction = ({
   id,

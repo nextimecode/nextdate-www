@@ -1,15 +1,15 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import React, { PropsWithChildren } from 'react'
-import NextHeader from '../../organisms/NextHeader'
+import { NextHeader } from '../../organisms/NextHeader'
 import { Box, Button, Center, Container } from '@chakra-ui/react'
 import Footer from '../../organisms/Footer'
 import MobileMenu from '../../organisms/MobileMenu'
 import NextFooter from '../../organisms/NextFooter'
-import { items } from '../../../data'
+import { layout } from '../../../data'
 import { useAuth } from '../../../contexts/AuthContext'
-import Link from 'next/link'
 
-type Props = {
+interface NextLayoutProps {
   isLogged?: boolean
   title?: string
   description?: string
@@ -21,18 +21,18 @@ type Props = {
   image?: string
 }
 
-const NextLayout = ({
+export const NextLayout = ({
   isLogged = true,
   children,
-  title = items.layout.title,
-  description = items.layout.description,
-  logoSrc = items.layout.logoSrc,
-  logoHeight = items.layout.logoHeight,
-  logoSubtitle = items.layout.logoSubtitle,
-  logoSubtitleColor = items.layout.logoSubtitleColor,
+  title = layout.title,
+  description = layout.description,
+  logoSrc = layout.logoSrc,
+  logoHeight = layout.logoHeight,
+  logoSubtitle = layout.logoSubtitle,
+  logoSubtitleColor = layout.logoSubtitleColor,
   keywords = ['bolão'],
   image = 'https://bolao.nextime.com.br/images/image_page.png'
-}: PropsWithChildren<Props>) => {
+}: PropsWithChildren<NextLayoutProps>) => {
   const { user } = useAuth()
 
   return (
@@ -95,5 +95,3 @@ const NextLayout = ({
     </>
   )
 }
-
-export default NextLayout
