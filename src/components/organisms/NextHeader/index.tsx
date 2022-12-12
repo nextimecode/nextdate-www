@@ -22,7 +22,7 @@ import { NavItem } from '../../../types/LandingPageItems'
 import { useAuth } from '../../../contexts/AuthContext'
 import { translateErrorCode } from '../../../utils/translateErrorCode'
 import { useRouter } from 'next/router'
-import { LogoNext } from '../../atoms/LogoNext'
+import { NextLogo } from '../../atoms/NextLogo'
 import colors from '../../../theme/colors'
 
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
@@ -195,7 +195,7 @@ export const NextHeader = ({
                 <Image src={logoSrc} alt={logoAlt} width={logoWidth} height={logoHeight} />
               )}
               {logoSrc === '/images/logos/next.svg' && (
-                <LogoNext colorPrimary={colors['next-primary']} color={logoColor} />
+                <NextLogo colorPrimary={colors['next-primary']} color={logoColor} />
               )}
               {logoSubtitle && (
                 <Box ms={2} px={2} borderLeft={'4px'} borderColor="next-primary">
