@@ -46,7 +46,7 @@ const NextLayout = ({
         <meta property="og:title" content={title} />
         <meta property="og:image" content={image} />
         <meta property="og:description" content={description} />
-        <meta property="og:site_name" content="NeXTBolao" />
+        <meta property="og:site_name" content="NeXTDate" />
         <meta property="article:author" content="NeXTIME" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />

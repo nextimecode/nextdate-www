@@ -1,5 +1,5 @@
 {
-  "name": "nextbolao",
+  "name": "nextdatewww",
   "version": "0.0.0-development",
   "private": true,
   "license": "MIT",
@@ -91,7 +91,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nextimecode/nextbolao.git"
+    "url": "https://github.com/nextimecode/nextdate-www.git"
   },
   "publishConfig": {
     "access": "restricted"

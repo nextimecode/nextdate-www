@@ -114,7 +114,7 @@ export default function NextTemplateSignup() {
     return (
       <>
         <Head>
-          <title>NeXTBolao | Cadastro</title>
+          <title>NeXTDate | Cadastro</title>
         </Head>
         <Flex minH={'100vh'} align={'center'} justify={'center'} bg={bgColor} color={color}>
           <Stack spacing={4} mx={'auto'} maxW={'lg'} pt={6} pb={1} px={1}>
@@ -125,7 +125,7 @@ export default function NextTemplateSignup() {
                 </Text>
               </Link>
               <Heading as="h1" fontSize={'xl'}>
-                Crie a sua conta no NeXTBolao
+                Crie a sua conta no NeXTDate
               </Heading>
               <Text fontSize={'lg'} color={'gray.600'}>
                 Já tem uma conta?{' '}
