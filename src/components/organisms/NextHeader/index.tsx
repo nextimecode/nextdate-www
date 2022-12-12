@@ -21,7 +21,7 @@ import { NavItem } from '../../../types/LandingPageItems'
 import { useAuth } from '../../../contexts/AuthContext'
 import { translateErrorCode } from '../../../utils/translateErrorCode'
 import { useRouter } from 'next/router'
-import { LogoNext } from '../../atoms/logoNext'
+import { LogoNext } from '../../atoms/LogoNext'
 import colors from '../../../theme/colors'
 import Link from 'next/link'
 
