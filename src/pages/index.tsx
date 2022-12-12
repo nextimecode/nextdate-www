@@ -1,15 +1,9 @@
-import React from 'react'
-import NextTemplateHome from '../components/templates/NextTemplateHome'
-import { nextHeroItem, nextCallToActionItems, nextTechnologyItems, nextTeamItems } from '../data'
+import { NextTemplateHome } from '../components/templates/NextTemplateHome'
+import { nextHeroItem, nextCallToActionItems } from '../data'
 
 const NextHome = () => {
   return (
-    <NextTemplateHome
-      nextHeroItem={nextHeroItem}
-      nextCallToActionItems={nextCallToActionItems}
-      nextTechnologyItems={nextTechnologyItems}
-      nextTeamItems={nextTeamItems}
-    />
+    <NextTemplateHome nextHeroItem={nextHeroItem} nextCallToActionItems={nextCallToActionItems} />
   )
 }
 

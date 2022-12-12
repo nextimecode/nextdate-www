@@ -6,11 +6,12 @@ import { NextLayout } from '../NextLayout'
 export type NextTemplateHomeProps = {
   nextHeroItem: NextHeroProps
   nextCallToActionItems: Array<NextCallToActionProps>
-  nextTechnologyItems: Array<Record<string, unknown>>
-  nextTeamItems: Array<Record<string, string>>
 }
 
-const NextTemplateHome = ({ nextHeroItem, nextCallToActionItems }: NextTemplateHomeProps) => {
+export const NextTemplateHome = ({
+  nextHeroItem,
+  nextCallToActionItems
+}: NextTemplateHomeProps) => {
   return (
     <NextLayout>
       <NextHero
@@ -38,5 +39,3 @@ const NextTemplateHome = ({ nextHeroItem, nextCallToActionItems }: NextTemplateH
     </NextLayout>
   )
 }
-
-export default NextTemplateHome
