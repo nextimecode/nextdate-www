@@ -1,6 +1,6 @@
 import React from 'react'
 import { NextCallToAction, NextCallToActionProps } from '../../organisms/NextCallToAction'
-import NextHero, { NextHeroProps } from '../../organisms/NextHero'
+import { NextHero, NextHeroProps } from '../../organisms/NextHero'
 import { NextLayout } from '../NextLayout'
 
 export type NextTemplateHomeProps = {

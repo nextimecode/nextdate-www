@@ -17,7 +17,7 @@ export type NextHeroProps = {
   alt?: string
 }
 
-const NextHero = ({
+export const NextHero = ({
   id,
   words,
   title,
@@ -89,5 +89,3 @@ const NextHero = ({
     </header>
   )
 }
-
-export default NextHero
