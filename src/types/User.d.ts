@@ -1,17 +1,15 @@
 export interface User {
-  name: string
-  email: string
-  hasSentEmail: boolean
-  avatarUrl: string
-  wantReceiveEmail: boolean
-  participatingAt: Array<string>
-  ownPools: Array<string>
+  email: string | null
+  friends: Array<string>
+  guests: Array<string>
+  photoURL: string | null
+  displayName: string | null
   myInvitationId: string
-  guess: Array<string>
   uid: string
   phoneNumber: string
+  wantReceiveEmail: boolean
+  metadata: UserMetadata
+  hasSentEmail: boolean
   invitation: string | null
-  myInvitationId: string
-  firstName: string
-  lastName: string
+  emailVerified: boolean
 }

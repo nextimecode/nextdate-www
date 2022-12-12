@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, SimpleGrid, Container, Center, Heading } from '@chakra-ui/react'
-import NextFeature, { NextFeatureProps } from '../../molecules/NextFeature'
+import { NextFeature, NextFeatureProps } from '../../molecules/NextFeature'
 
 export interface NextFeaturesProps {
   title?: string

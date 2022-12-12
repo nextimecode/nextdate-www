@@ -19,7 +19,7 @@ import {
   Input
 } from '@chakra-ui/react'
 import { useRef, useState } from 'react'
-import NextLayout from '../components/templates/NextLayout'
+import { NextLayout } from '../components/templates/NextLayout'
 import { useAuth } from '../contexts/AuthContext'
 import Footer from '../components/organisms/Footer'
 import MobileMenu from '../components/organisms/MobileMenu'

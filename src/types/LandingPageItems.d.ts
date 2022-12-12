@@ -1,5 +1,4 @@
-export interface NextCallToAction {
-  isLoading?: boolean
+export interface NextCallToActionProps {
   id?: string
   title: string
   text: string
@@ -7,13 +6,10 @@ export interface NextCallToAction {
   textButton?: string
   image: string
   url: string
-  width: number
+  width: numbe
   height: number
   directionMd?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
   directionBase?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
-  poolsCount?: number
-  guessesCount?: number
-  usersCount?: number
 }
 
 export interface NavItem {

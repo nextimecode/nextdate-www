@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import * as Sentry from '@sentry/nextjs'
 import Image from 'next/image'
 import {
@@ -21,9 +22,8 @@ import { NavItem } from '../../../types/LandingPageItems'
 import { useAuth } from '../../../contexts/AuthContext'
 import { translateErrorCode } from '../../../utils/translateErrorCode'
 import { useRouter } from 'next/router'
-import { LogoNext } from '../../atoms/logoNext'
+import { LogoNext } from '../../atoms/LogoNext'
 import colors from '../../../theme/colors'
-import Link from 'next/link'
 
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
@@ -141,7 +141,7 @@ type Props = {
   logoSubtitleColor?: string
 }
 
-const NextHeader = ({
+export const NextHeader = ({
   isLogged = true,
   logoSrc = '/images/logos/logo_nextime.svg',
   logoWidth = 106,
@@ -237,5 +237,3 @@ const NextHeader = ({
     </Box>
   )
 }
-
-export default NextHeader

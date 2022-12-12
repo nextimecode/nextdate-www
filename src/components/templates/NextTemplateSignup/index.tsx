@@ -60,20 +60,19 @@ export default function NextTemplateSignup() {
       const lastName = fullName[fullName.length - 1]
       const myInvitationId = `${firstName.toLowerCase()}-${idInvitation()}`
       const newUser: User = {
-        email: response?.user?.email,
+        email: data.email,
         hasSentEmail: false,
-        avatarUrl: '',
-        name: response?.user?.displayName,
+        photoURL: '',
+        displayName: response?.user?.displayName,
         wantReceiveEmail: data.wantReceiveEmail,
         uid: response?.user?.uid,
         phoneNumber: data.phoneNumber,
         invitation: idWhoInvited,
         myInvitationId,
-        firstName,
-        lastName,
-        participatingAt: [],
-        ownPools: [],
-        guess: []
+        metadata: undefined,
+        emailVerified: false,
+        friends: [],
+        guests: []
       }
       await api.post('/users', newUser, {
         headers: {
@@ -114,7 +113,7 @@ export default function NextTemplateSignup() {
     return (
       <>
         <Head>
-          <title>NeXTBolao | Cadastro</title>
+          <title>NeXTDate | Cadastro</title>
         </Head>
         <Flex minH={'100vh'} align={'center'} justify={'center'} bg={bgColor} color={color}>
           <Stack spacing={4} mx={'auto'} maxW={'lg'} pt={6} pb={1} px={1}>
@@ -125,7 +124,7 @@ export default function NextTemplateSignup() {
                 </Text>
               </Link>
               <Heading as="h1" fontSize={'xl'}>
-                Crie a sua conta no NeXTBolao
+                Crie a sua conta no NeXTDate
               </Heading>
               <Text fontSize={'lg'} color={'gray.600'}>
                 Já tem uma conta?{' '}
