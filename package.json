@@ -17,6 +17,8 @@
     "postinstall": "husky install",
     "codegen": "graphql-codegen",
     "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
