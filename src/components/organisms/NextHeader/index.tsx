@@ -204,17 +204,19 @@ export const NextHeader = ({
                 </Flex>
               )}
             </Button>
-            <Link href={'/cadastro'}>
-              <Button
-                bg={'next-primary'}
-                color={'white'}
-                _hover={{
-                  bg: 'next-primary-hover'
-                }}
-              >
-                CADASTRAR
-              </Button>
-            </Link>
+            <Box display={{ base: 'none', sm: 'flex' }}>
+              <Link href={'/cadastro'}>
+                <Button
+                  bg={'next-primary'}
+                  color={'white'}
+                  _hover={{
+                    bg: 'next-primary-hover'
+                  }}
+                >
+                  CADASTRAR
+                </Button>
+              </Link>
+            </Box>
             <Button
               bg={'next-primary'}
               color={'white'}

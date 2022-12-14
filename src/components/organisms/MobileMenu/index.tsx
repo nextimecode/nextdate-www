@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Box, Flex } from '@chakra-ui/react'
-import { FaThLarge, FaCog, FaPlus } from 'react-icons/fa'
+import { FaThLarge, FaMicroblog, FaPlus } from 'react-icons/fa'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -12,34 +12,34 @@ export const MobileMenu = () => {
   return (
     <Box bgColor="next-primary" bottom="0px" position="fixed" w="100%" px={6} py={1}>
       <Flex alignItems={'center'} justifyContent={'space-between'}>
-        <Link href="/boloes">
+        <Link href="/login">
           <Flex
             m={3}
             flexDirection="column"
             alignItems={'center'}
-            color={router.pathname === '/boloes' ? activeColor : linkColor}
+            color={router.pathname === '/login' ? activeColor : linkColor}
           >
             <FaThLarge size={30} />
           </Flex>
         </Link>
-        <Link href="/criar-bolao">
+        <Link href="/cadastrar">
           <Flex
             m={3}
             flexDirection="column"
             alignItems={'center'}
-            color={router.pathname === '/criar-bolao' ? activeColor : linkColor}
+            color={router.pathname === '/cadastrar' ? activeColor : linkColor}
           >
             <FaPlus size={30} />
           </Flex>
         </Link>
-        <Link href="/settings">
+        <Link href="/blog">
           <Flex
             m={3}
             flexDirection="column"
             alignItems={'center'}
-            color={router.pathname === '/settings' ? activeColor : linkColor}
+            color={router.pathname === '/blog' ? activeColor : linkColor}
           >
-            <FaCog size={30} />
+            <FaMicroblog size={30} />
           </Flex>
         </Link>
       </Flex>

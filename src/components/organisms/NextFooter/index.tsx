@@ -20,7 +20,7 @@ export type NextFooterProps = {
 const NextFooter = ({ bg = 'next-primary' }: NextFooterProps) => {
   return (
     <footer>
-      <Box bg={bg} pt={12} pb={12} display={['none', 'block']}>
+      <Box bg={bg} pt={12} pb={12}>
         <Grid templateColumns="repeat(5, 2fr)">
           <GridItem colSpan={[1, 3]}>
             <Container maxW="2xl">
