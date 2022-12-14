@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Select, Skeleton } from '@chakra-ui/react'
 import { useFormContext } from 'react-hook-form'
-import { InputContext } from '../../molecules/DefaultInput'
+import { InputContext } from '../../molecules/NextDefaultInput'
 
 export interface SelectItemsInterface {
   label?: string | undefined
@@ -17,7 +17,7 @@ type Props = {
   isLoading?: boolean
 }
 
-const InputSelect = ({
+export const NextInputSelect = ({
   options,
   placeholder = 'Selecione',
   defaultValue,
@@ -75,5 +75,3 @@ const InputSelect = ({
     return <></>
   }
 }
-
-export default InputSelect
