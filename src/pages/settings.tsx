@@ -85,7 +85,7 @@ export default function Settings() {
   }
 
   return (
-    <NextLayout title={'NeXTBolao | Configurações'}>
+    <NextLayout title={'NeXTDATE | Configurações'}>
       <Container display={'flex'} flexDirection={'column'} maxW="container.sm" pb={16} gap={6}>
         <Box>
           {!user?.emailVerified && (

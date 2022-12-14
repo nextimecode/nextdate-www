@@ -115,21 +115,6 @@ const DesktopNav = ({ navItems = NAV_ITEMS }: Props) => {
   )
 }
 
-const NAV_ITEMS_LOGGED: Array<NavItem> = [
-  {
-    label: 'Bolões',
-    href: '/boloes'
-  },
-  {
-    label: 'Criar Bolao',
-    href: '/criar-bolao'
-  },
-  {
-    label: 'Configurações',
-    href: '/settings'
-  }
-]
-
 type Props = {
   isLogged?: boolean
   navItems?: Array<NavItem>
@@ -142,7 +127,6 @@ type Props = {
 }
 
 export const NextHeader = ({
-  isLogged = true,
   logoSrc = '/images/logos/logo_nextime.svg',
   logoWidth = 106,
   logoHeight = 45,
@@ -150,7 +134,6 @@ export const NextHeader = ({
   logoSubtitle,
   logoSubtitleColor = 'next-blue.400'
 }: Props) => {
-  const navItems = isLogged ? NAV_ITEMS_LOGGED : NAV_ITEMS
   const router = useRouter()
   const toast = useToast()
   const { colorMode, toggleColorMode } = useColorMode()
@@ -208,7 +191,7 @@ export const NextHeader = ({
           </Link>
           <HStack flex={{ base: 1 }} gap={1} justify={{ base: 'end' }} alignItems={'center'}>
             <Flex display={{ base: 'none', sm: 'flex' }} me={4}>
-              <DesktopNav navItems={navItems} />
+              <DesktopNav navItems={NAV_ITEMS} />
             </Flex>
             <Button bg={buttonBgColor} aria-label="Definir tema" onClick={toggleColorMode}>
               {colorMode === 'light' ? (
@@ -221,11 +204,22 @@ export const NextHeader = ({
                 </Flex>
               )}
             </Button>
+            <Link href={'/cadastro'}>
+              <Button
+                bg={'next-primary'}
+                color={'white'}
+                _hover={{
+                  bg: 'next-primary-hover'
+                }}
+              >
+                CADASTRAR
+              </Button>
+            </Link>
             <Button
               bg={'next-primary'}
               color={'white'}
               _hover={{
-                bg: 'blue.500'
+                bg: 'next-primary-hover'
               }}
               onClick={() => handleSubmit()}
             >

@@ -5,10 +5,10 @@ import { NextLayout } from '../components/templates/NextLayout'
 const NextHome = () => {
   return (
     <NextLayout>
-      {nextCallToActionItems?.map((item, index) => (
+      {nextCallToActionItems?.map(item => (
         <NextCallToAction
           id={item.id}
-          key={index}
+          key={item.id}
           title={item.title}
           text={item.text}
           image={item.image}

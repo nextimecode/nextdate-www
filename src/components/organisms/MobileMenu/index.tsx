@@ -5,7 +5,7 @@ import { FaThLarge, FaCog, FaPlus } from 'react-icons/fa'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-const MobileMenu = () => {
+export const MobileMenu = () => {
   const router = useRouter()
   const linkColor = 'black'
   const activeColor = 'white'
@@ -46,5 +46,3 @@ const MobileMenu = () => {
     </Box>
   )
 }
-
-export default MobileMenu
