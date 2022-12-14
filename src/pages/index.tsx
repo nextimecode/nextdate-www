@@ -1,15 +1,25 @@
-import React from 'react'
-import NextTemplateHome from '../components/templates/NextTemplateHome'
-import { nextHeroItem, nextCallToActionItems, nextTechnologyItems, nextTeamItems } from '../data'
+import { nextCallToActionItems } from '../data'
+import { NextCallToAction } from '../components/organisms/NextCallToAction'
+import { NextLayout } from '../components/templates/NextLayout'
 
 const NextHome = () => {
   return (
-    <NextTemplateHome
-      nextHeroItem={nextHeroItem}
-      nextCallToActionItems={nextCallToActionItems}
-      nextTechnologyItems={nextTechnologyItems}
-      nextTeamItems={nextTeamItems}
-    />
+    <NextLayout>
+      {nextCallToActionItems?.map(item => (
+        <NextCallToAction
+          id={item.id}
+          key={item.id}
+          title={item.title}
+          text={item.text}
+          image={item.image}
+          textButton={item.textButton}
+          directionMd={item.directionMd}
+          width={item.width}
+          height={item.height}
+          url={item.url}
+        />
+      ))}
+    </NextLayout>
   )
 }
 

@@ -5,7 +5,7 @@ import { useGetPostsQuery } from '../../graphql/generated'
 export default function Blog() {
   const { data } = useGetPostsQuery()
   return (
-    <NextLayout isLogged={false}>
+    <NextLayout>
       <NextArticleList posts={data?.posts} />
     </NextLayout>
   )

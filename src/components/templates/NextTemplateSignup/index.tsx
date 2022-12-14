@@ -113,7 +113,7 @@ export default function NextTemplateSignup() {
     return (
       <>
         <Head>
-          <title>NeXTDate | Cadastro</title>
+          <title>NeXTDATE | Cadastro</title>
         </Head>
         <Flex minH={'100vh'} align={'center'} justify={'center'} bg={bgColor} color={color}>
           <Stack spacing={4} mx={'auto'} maxW={'lg'} pt={6} pb={1} px={1}>
@@ -124,7 +124,7 @@ export default function NextTemplateSignup() {
                 </Text>
               </Link>
               <Heading as="h1" fontSize={'xl'}>
-                Crie a sua conta no NeXTDate
+                Crie a sua conta no NeXTDATE
               </Heading>
               <Text fontSize={'lg'} color={'gray.600'}>
                 Já tem uma conta?{' '}
@@ -189,7 +189,7 @@ export default function NextTemplateSignup() {
                       Termos de Uso
                     </Text>
                   </Link>{' '}
-                  do aplicativo NeXTBolao.
+                  do aplicativo NeXTDATE.
                 </Text>
                 <FormControl id="wantReceiveEmail">
                   <Checkbox
@@ -199,7 +199,7 @@ export default function NextTemplateSignup() {
                     {...register('wantReceiveEmail')}
                   >
                     <Text fontSize="xs">
-                      Você concorda em receber informações do NeXTBolao relacionadas a nossos
+                      Você concorda em receber informações do NeXTDATE relacionadas a nossos
                       serviços, eventos e promoções. Você pode cancelar sua inscrição a qualquer
                       momento, seguindo as instruções nas comunicações recebidas.
                     </Text>

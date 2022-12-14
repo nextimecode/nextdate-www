@@ -21,7 +21,6 @@ export default function Blog() {
       title={post?.title}
       description={description}
       keywords={post?.seo?.keywords}
-      isLogged={false}
       image={image?.url}
     >
       <Container maxW="container.md" pb={6}>

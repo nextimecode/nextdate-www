@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import { MobileMenu } from '../../organisms/MobileMenu'
 import { Box, Container, Grid, GridItem, Heading, HStack, Icon, Text } from '@chakra-ui/react'
 
 import {
@@ -113,6 +113,9 @@ const NextFooter = ({ bg = 'next-primary' }: NextFooterProps) => {
             </Container>
           </GridItem>
         </Grid>
+      </Box>
+      <Box display={['block', 'none']}>
+        <MobileMenu />
       </Box>
     </footer>
   )

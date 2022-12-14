@@ -22,7 +22,7 @@ import { useRef, useState } from 'react'
 import { NextLayout } from '../components/templates/NextLayout'
 import { useAuth } from '../contexts/AuthContext'
 import Footer from '../components/organisms/Footer'
-import MobileMenu from '../components/organisms/MobileMenu'
+import { MobileMenu } from '../components/organisms/MobileMenu'
 import { SunIcon, MoonIcon, CheckCircleIcon } from '@chakra-ui/icons'
 import { translateErrorCode } from '../utils/translateErrorCode'
 import * as Sentry from '@sentry/nextjs'
@@ -85,7 +85,7 @@ export default function Settings() {
   }
 
   return (
-    <NextLayout title={'NeXTBolao | Configurações'}>
+    <NextLayout title={'NeXTDATE | Configurações'}>
       <Container display={'flex'} flexDirection={'column'} maxW="container.sm" pb={16} gap={6}>
         <Box>
           {!user?.emailVerified && (

@@ -50,10 +50,8 @@ export const NextCallToAction = ({
                 <Button
                   color="white"
                   bg={'next-primary'}
-                  width={['100%', '50%']}
                   _hover={{
-                    bg: 'next-blue.400',
-                    color: 'white'
+                    bg: 'next-primary-hover'
                   }}
                 >
                   {textButton}
@@ -69,10 +67,8 @@ export const NextCallToAction = ({
           <Link href={url}>
             <Button
               bg={'next-primary'}
-              width={['100%', '50%']}
               _hover={{
-                bg: 'next-blue.400',
-                color: 'white'
+                bg: 'next-primary-hover'
               }}
             >
               {textButton}

@@ -62,7 +62,7 @@ export default function Login() {
     return (
       <Box bg={bgColor} color={color}>
         <Head>
-          <title>NeXTBolao | Login</title>
+          <title>NeXTDATE | Login</title>
         </Head>
         <Flex minH={'100vh'} align={'center'} justify={'center'}>
           <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
@@ -72,7 +72,7 @@ export default function Login() {
                   Voltar para o site
                 </Text>
               </Link>
-              <Heading fontSize={'xl'}>Faça login no NeXTBolao</Heading>
+              <Heading fontSize={'xl'}>Faça login no NeXTDATE</Heading>
               <Text fontSize={'lg'} color={'gray.600'}>
                 Não tem conta?{' '}
                 <Link href="/cadastro">

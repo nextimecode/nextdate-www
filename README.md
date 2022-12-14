@@ -263,3 +263,34 @@ Se você chegou até aqui é porque você fez seu primeiro deploy.
 🎉 Parabéns.
 
 Desenvolvido por [NeXTIME](https://github.com/nextimecode)
+
+
+## Padrões de Branches
+
+Branches devem seguir os padrões abaixo
+
+### Tarefas
+`{type}/favro/{task_id}`
+
+#### Tipos
+- feature
+- patch
+- fix
+
+##### Exemplos
+- feature/favro/4551
+- patch/favro/3443
+
+#### Conflitos
+Em caso de conflitos, a branch de resolução de conflitos de ser prefixada com `merge`:
+
+`merge/{type}/favro/{task_id}`
+
+##### Exemplos
+- merge/feature/favro/4667
+
+### Hotfixes
+`hotfix/{name_of_the_thing_you_are_fixing}`
+
+##### Exemplos
+- hotfix/plans_page_coupon

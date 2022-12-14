@@ -1,7 +1,7 @@
 import { createContext, ReactNode } from 'react'
 import { RegisterOptions, useFormContext } from 'react-hook-form'
 import { FormControl, FormLabel, Text } from '@chakra-ui/react'
-import FormErrors from '../FormErrors'
+import { NextFormErrors } from '../NextFormErrors'
 
 interface InputContextProps {
   field: string
@@ -50,7 +50,7 @@ const DefaultInput = ({
         )}
         {children}
         {formContext?.formState.errors[field] && (
-          <FormErrors errors={formContext?.formState.errors} field={field} />
+          <NextFormErrors errors={formContext?.formState.errors} field={field} />
         )}
       </FormControl>
     </InputContext.Provider>

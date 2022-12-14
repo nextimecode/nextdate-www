@@ -1,5 +1,6 @@
 const colors = {
-  'next-primary': '#06aa48',
+  'next-primary': '#8257e5',
+  'next-primary-hover': '#9466ff',
   'next-gray': {
     200: '#BDBDBD'
   },

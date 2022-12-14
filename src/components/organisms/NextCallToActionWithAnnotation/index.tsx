@@ -15,7 +15,7 @@ export default function NextCallToActionWithAnnotation() {
           <Text>
             Não usamos dinheiro real. O{' '}
             <Text as="span" color={'next-primary'}>
-              NeXTBolao
+              NeXTDATE
             </Text>{' '}
             é um game produzido pela empresa{' '}
             <Text as="span" color={'next-blue.400'} _hover={{ 'text-decoration': 'underline' }}>

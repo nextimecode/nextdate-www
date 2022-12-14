@@ -23,7 +23,7 @@ const Footer = () => {
       alignItems="center"
     >
       <Box as="div" w={['100%', '50%']} textAlign="center" py={[3, 4]}>
-        Copyright © {new Date().getFullYear()} | NeXTDate | v.{version}
+        Copyright © {new Date().getFullYear()} | NeXTDATE | v.{version}
       </Box>
 
       <Box as="div" placeContent="center" w={['100%', '50%']} py={[3, 4]}>

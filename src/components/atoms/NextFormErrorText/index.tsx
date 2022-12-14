@@ -8,7 +8,7 @@ type Props = {
   message: string | MultipleFieldErrors
 }
 
-const FormErrorText = ({ message }: Props) => {
+export const NextFormErrorText = ({ message }: Props) => {
   if (message) {
     return (
       <React.Fragment>
@@ -23,5 +23,3 @@ const FormErrorText = ({ message }: Props) => {
   }
   return <React.Fragment></React.Fragment>
 }
-
-export default FormErrorText
